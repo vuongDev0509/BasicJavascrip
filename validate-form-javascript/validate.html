@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validate Js</title>
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="./dist/theme.css">
+    <script type="text/javascript" src="./dist/script.js"></script>
+</head>
+<body>
+	<div class="page">
+		<header>
+            <div class="container">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="https://bulma.io">
+                            <strong>Validate Form - Javascript</strong>
+                        </a>
+
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-start">
+                        <a class="navbar-item">Home</a>
+
+                        <a class="navbar-item">Documentation</a>
+
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">More</a>
+
+                            <div class="navbar-dropdown">
+
+                                <a class="navbar-item">About</a>
+                                <a class="navbar-item">Jobs</a>
+                                <a class="navbar-item">Contact</a>
+
+                                <hr class="navbar-divider">
+
+                                <a class="navbar-item">Report an issue</a>
+
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">Log in</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+        	<div class="container">
+				<div id="vv-register-form">
+                    <h2 class="title">Register Form</h2>
+                        <form method="post" action="#!">
+                 			<div class="group">
+                 				<label>Full Name</label>
+                 				<input type="text" id="fullname" class="input" name="fulname"placeholder="Full Name" />
+                 				<span id="error-fullname"></span>
+                 			</div>
+                 			<div class="group">
+                 				<label>User Name</label>
+                 				<input type="text" id="username" class="input" name="Username" placeholder="Username" />
+                 				<span id="error-username"></span>
+                 			</div>
+                 			<div class="group">
+                 				<label>Email</label>
+                 				<input type="email" id="email" class="input" name="email" placeholder="Email">
+                 				<span id="error-email"></span>
+                 			</div>
+                 			<div class="group">
+                 				<label>PassWord</label>
+                 				<input type="password"id="password" class="input" name="password" placeholder="Password" />
+                 				<span id="error-password"></span>
+                 			</div>
+                 			<div class="group">
+                 				<label>Confirm Password</label>
+                 				<input type="password" id="confirmpassword" class="input" name="user" placeholder="Confirm Password" />  
+                 				<span id="error-confirmpassword"></span>
+                 			</div>
+                 			<div class="group-submit group">
+                 				<input type="submit" id="submit" name="signup" value="Sign Up" onclick="checkform()"/>
+                 				<span id="error-signup"></span>
+                 				<!-- <span id="signup-oke"></span> -->
+                 			</div>
+                 		</form>
+                </div>      	       	
+        	</div>	
+        </main>
+	</div>
+	
+</body>
+</html>

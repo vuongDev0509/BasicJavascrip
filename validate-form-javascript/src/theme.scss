@@ -1,0 +1,48 @@
+#register-form {
+    margin: 3em 0;
+
+    h2 {
+        margin-bottom: 1em;
+    }
+}
+#vv-register-form{
+	padding-bottom: 30px;
+	.group:not(:first-child){
+		margin-top: 15px;
+	}
+	.group{
+		width: 100%;
+		max-width: 800px;
+		margin-left:auto;
+		margin-right: auto;
+		label{
+			margin-bottom: 5px;
+		    color: #333;
+		    display: inline-block;
+		    font-weight: 700;
+		}
+		span{
+			display: inline-block;
+		    color: red;
+		    letter-spacing: 0.32px;
+		    margin-top: 10px;
+		    font-size:15px;
+		}
+		&.group-submit{
+			margin-top: 0 !important;
+			input{
+				width: 150px;
+				height: 50px;
+				color: #fff;
+				line-height: 50px;
+				background-color: blue;
+				padding:0;
+			}
+			span{
+				font-size: 18px;
+				width:100%;
+				
+			}
+		}
+	}
+}

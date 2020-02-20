@@ -1,0 +1,7 @@
+{
+    "domain": "0.0.0.0",
+    "port": 33333,
+    "baseDir": "./",
+    "delay": 0,
+    "withCORS": "true"
+}
