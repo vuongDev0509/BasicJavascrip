@@ -59,3 +59,29 @@ function checkform(){
         window.alert('You have registered an account'); 
     }
 }
+// check tabs
+var button = document.getElementsByClassName('dataTabs');
+var data;
+[...button].forEach( (dataTabs) => {
+	dataTabs.addEventListener('click', () => {
+  	data =  dataTabs.textContent;
+  	switch(data){
+  		case 'Login':{  
+  			document.getElementsByClassName('tabs-title-login')[0].classList.add("active");
+  			document.getElementsByClassName('tabs-title-register')[0].classList.remove("active");
+  			document.getElementsByClassName('tabs-content-register')[0].classList.add("hidden");
+  			document.getElementsByClassName('tabs-content-login')[0].classList.remove("hidden");
+  			break;
+  		}
+  		case 'Register':{
+  			document.getElementsByClassName('tabs-title-login')[0].classList.remove("active");
+  			document.getElementsByClassName('tabs-title-register')[0].classList.remove("active");
+  			document.getElementsByClassName('tabs-title-register')[0].classList.add("active");
+  			document.getElementsByClassName('tabs-content-login')[0].classList.remove("hidden");
+  			document.getElementsByClassName('tabs-content-login')[0].classList.add("hidden");
+  			document.getElementsByClassName('tabs-content-register')[0].classList.remove("hidden");
+  			break;
+  		}
+  	}
+  })
+});

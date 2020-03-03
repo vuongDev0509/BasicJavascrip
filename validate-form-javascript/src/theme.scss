@@ -5,6 +5,46 @@
         margin-bottom: 1em;
     }
 }
+.vv-content{
+	#form-login-register{
+		width: 100%;
+		padding: 40px;
+		border-radius: 15px;
+		background: url(../asset/image/background-form-001.jpg) no-repeat scroll center center / cover;
+		.tabs-form{
+			width:100%;
+			border-radius: 15px;
+			max-width: 600px;
+			margin-left:auto;
+			margin-right: auto;
+			overflow: hidden;
+			background: url(../asset/image/background-form-002.jpg) no-repeat scroll center center / cover;
+			.columns.tabs-title{
+				margin: 0;
+				.column {
+					text-align: center;
+					border-bottom: 1px solid;
+					overflow: hidden;
+					&.tabs-title-login{
+						border-right:1px solid;
+					}
+					&.active{
+						background:#fff;
+					}
+				}
+				
+			}
+			.tabs-content{
+				padding: 30px;
+				.tabs-content-item{
+					&.hidden{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
 #vv-register-form{
 	padding-bottom: 30px;
 	.group:not(:first-child){
